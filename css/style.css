@@ -6,8 +6,23 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
+div{
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 2px 2px #DCDCDC;
+}
+aside img{
+    border-radius: 5px;
+    object-fit: cover;
+}
+
 h1 {
-    border-bottom: 1px solid rgb(185, 131, 44);
+    border-bottom: 1px solid rgb(253, 194, 116);
+    text-align: center;
+    font-size: 38px;
+    text-shadow: 2px 2px #ccc;
 }
 
 
@@ -22,6 +37,6 @@ section div aside {
 }
 
 section div aside img{
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
 }
