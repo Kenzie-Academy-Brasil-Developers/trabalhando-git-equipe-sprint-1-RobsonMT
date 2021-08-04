@@ -1,42 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
-
-main {
-    margin: 0 auto;
-    width: 70vw;
-    font-family: 'Montserrat', sans-serif;
+html, body{
+    font-family: sans-serif;
+    background: linear-gradient( 100deg,#090920,#09094d);
+    padding: 0 40px 0 40px;
+    max-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
-
-div{
-    border: 1px solid rgb(224, 224, 224);
-    border-radius: 10px;
-    margin-bottom: 15px;
+header{
+    background-color: rgb(119, 216, 216);
+    border-radius: 0 70px 0 70px;
+    margin-bottom: 20px;
     padding: 10px;
-    box-shadow: 2px 2px #DCDCDC;
 }
-aside img{
-    border-radius: 5px;
+
+h1{
+    color: #fff;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: rgb(99, 158, 190) 1px 1px;
+    text-align: center;
+    
+}
+h3{
+    color: #000;
+}
+p:hover{
+    color: #000;
+}
+p{
+    color: rgb(145, 138, 138);
+}
+article{
+    padding-left: 10px;
+}
+div{
+   width: calc(100% - padding-box);
+}
+section{
+    color: #fff;
+    background-color: #F5F5F5;
+    border-top:10px solid #F5F5F5;
+    border-left:20px solid transparent;
+    background-clip: padding-box;
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+    float:left;
+    display: flex;
+    margin-bottom: 20px;
+    width: inherit;
+}
+section:hover{
+    background-color: #D3D3D3;
+    border-top:10px solid #D3D3D3; 
+}
+#robson p{
+    padding-right: 5px;
+}
+#thiago p{
+    padding-right: 62px;
+}
+
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
-h1 {
-    border-bottom: 1px solid rgb(253, 194, 116);
+/**** FOOTER ****/
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: inherit;
+    margin-left: 20px;
+    
+}
+/* id-da-função */
+#div--1{
+    display: none;
+}
+.d-footer{
+    color: #fff;
+    background-color: #D3D3D3;
+    border-top:10px solid #D3D3D3;
+    border-right:20px solid transparent;
+    border-left:none;
+    background-clip: padding-box;
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+    float:right;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+aside{
+    margin: 10px;
+}
+aside p{
+    color: #000;
     text-align: center;
-    font-size: 38px;
-    text-shadow: 2px 2px #ccc;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+.linkedin, .github{
+    background-color: #fff;
+}  
+.gmail{
+    background-color: #fff;
+} 
+.zoom{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.zoom:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
-section div article {
-    width: 75%;
-    clear: both
+@media (max-width: 700px){
+    section{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    aside{
+        display: flex;
+        justify-content: center;
+    }
+    h3{
+        text-align: center;
+    }
+    #thiago p{
+        text-align: center;
+        padding: 5px;
+    }
+    
 }
-
-section div aside {
-    width: 15%;
-    float: left;
-}
-
-section div aside img{
-    width: 180px;
-    height: 180px;
+@media (max-width: 417px){
+    .d-footer, aside{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    footer{
+        margin-left: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .user{
+        align-self: center;
+    }
 }
